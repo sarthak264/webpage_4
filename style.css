@@ -72,3 +72,29 @@
     background-color: var(--blue);
     padding: 7.5rem 0;
 }
+
+/* ============== */
+/* Footer */
+.footer{
+    padding: 5rem 0;
+}
+.icons-list{
+    gap: 0.8rem;
+}
+.icon-container{
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 4rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.icon-container:hover{
+    background-color: #155d74;
+}
+.footer small{
+    color: #6C757D;
+}
