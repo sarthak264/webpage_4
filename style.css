@@ -8,6 +8,8 @@
 :root{
     --blue : #1d809f;
     --black : #212529;
+    --white : #ffffff;
+    --shady-white : #f8f9fa;
 }
 
 /* Custom Classes */
@@ -37,6 +39,16 @@
     .header h1{
         font-size: 4rem;
     }
+}
+
+/* ============== */
+/* About */
+.about{
+    background-color: var(--shady-white);
+    padding: 7.5rem 0;
+}
+.about a{
+    color: #17667F;
 }
 
 /* ============== */
