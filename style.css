@@ -3,6 +3,7 @@
 *{
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 /* Variables */
 :root{
     --blue : #1d809f;
@@ -15,6 +16,31 @@
 }
 
 /* Styling */
+
+/* ============== */
+/* Header */
+.header{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(90deg ,rgba(255,255,255,0.1),rgba(255,255,255,0.1)),url("assets/bg-masthead.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.header button{
+    background: var(--blue);    
+}
+.header h1{
+    font-size: 5.5rem;
+}
+@media screen and (max-width:992px){
+    .header h1{
+        font-size: 4rem;
+    }
+}
+
+/* ============== */
+/* Call to Action */
 .call-to-action{
     background-color: var(--blue);
     padding: 7.5rem 0;
