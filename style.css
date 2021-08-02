@@ -1,0 +1,21 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* Variables */
+:root{
+    --blue : #1d809f;
+    --black : #212529;
+}
+
+/* Custom Classes */
+.btn-xl{
+    padding: 1.2rem 2.5rem;
+}
+
+/* Styling */
+.call-to-action{
+    background-color: var(--blue);
+    padding: 7.5rem 0;
+}
