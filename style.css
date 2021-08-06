@@ -18,6 +18,66 @@
 }
 
 /* Styling */
+body{
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* ============== */
+/* Nav Trigger Btn */
+.nav-btn{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(0,0,0,0.4);
+    padding: 0.7rem 1rem;
+    border-radius: 0.2rem;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 100;
+    font-size: 1.2rem;
+}
+
+/* ============== */
+/* Offcanvas Navigation */
+.side-nav{
+    background-color: var(--blue);
+    z-index: 10;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.2s linear;
+}
+.side-nav.active{
+    transform: translateX(0);
+}
+.side-nav__header{
+    font-size: 1.5rem;
+    padding: 1.6rem 1rem;
+    background-color: #1f7995;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.side-nav__menu ul{
+    padding-left: 0;
+}
+.side-nav__menu li{
+    list-style: none;
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+.side-nav__menu a{
+    color: white;
+    text-decoration: none;
+}
+.side-nav__menu li:hover{
+    background-color: #4a9ab2;
+}
 
 /* ============== */
 /* Header */
@@ -30,7 +90,7 @@
     background-position: center;
 }
 .header button{
-    background: var(--blue);    
+    background: var(--blue);
 }
 .header h1{
     font-size: 5.5rem;
@@ -72,11 +132,14 @@
     background-color: var(--blue);
     padding: 7.5rem 0;
 }
+@media screen and (max-width:360px) {
+
+}
 
 /* ============== */
 /* Footer */
 .footer{
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 .icons-list{
     gap: 0.8rem;
@@ -91,6 +154,7 @@
     place-items: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 0 0.25rem;
 }
 .icon-container:hover{
     background-color: #155d74;
