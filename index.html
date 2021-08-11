@@ -25,12 +25,12 @@
 
     <!-- Offcanvas Navbar -->
     <div class="side-nav">
-        <div class="side-nav__header">Start Bootstrap</div>
+        <div class="side-nav__header"><a href="#header">Start Bootstrap</a></div>
         <div class="side-nav__menu">
             <ul>
                 <a href="#header"><li>Home</li></a>
                 <a href="#about"><li>About</li></a>
-                <a href="#"><li>Services</li></a>
+                <a href="#services"><li>Services</li></a>
                 <a href="#"><li>Portfolio</li></a>
                 <a href="#footer"><li>Contact</li></a>
             </ul>
@@ -60,6 +60,46 @@
                 <a href="https://unsplash.com/">Unsplash</a> !
             </p>
             <button class="btn btn-xl btn-dark">What We Offer</button>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container text-center text-white px-5">
+            <div class="headings-section">
+                <h6 class="fw-bolder mb-0">SERVICES</h5>
+                <h2 class="display-5 fw-bold mb-5">What We Offer</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="service-icon-container mx-auto mb-3">
+                        <i class="icon-screen-smartphone"></i>
+                    </div>
+                    <h4 class="fw-bolder">Responsive</h4>
+                    <p class="">Looks great on any screen size!</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="service-icon-container mx-auto mb-3">
+                        <i class="icon-pencil"></i>
+                    </div>
+                    <h4 class="fw-bolder">Redesigned</h4>
+                    <p class="">Freshly redesigned for Bootstrap 5.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="service-icon-container mx-auto mb-3">
+                        <i class="icon-like"></i>
+                    </div>
+                    <h4 class="fw-bolder">Favorited</h4>
+                    <p class=""> Millions of users 🖤 Start Bootstrap! </p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="service-icon-container mx-auto mb-3">
+                        <i class="icon-mustache"></i>
+                    </div>
+                    <h4 class="fw-bolder">Question</h4>
+                    <p class="">I mustache you a question...</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -130,7 +170,6 @@
         const navToggle = document.querySelector(".nav-btn");
         const child = document.querySelector(".nav-btn i");
         navToggle.addEventListener("click", () => {
-            // console.log(child.classList.contains('icon-menu'));
             if (child.classList.contains("icon-menu")) {
                 nav.classList.toggle("active")
                 child.classList.remove("icon-menu");
